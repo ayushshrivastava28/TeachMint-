@@ -91,7 +91,10 @@ DATABASES = {
         'USER':'teach_mint_project',
         'PASSWORD':'teach_mint_project',
         'HOST':'localhost',
-        'PORT':'3306'
+        'PORT':'3306',
+        'TEST': {
+            'NAME': 'teach_mint_project__db',
+        },
     }
 }
 
