@@ -25,7 +25,7 @@ SECRET_KEY = 'fe47eax*mgc1n4z6=_m0!zty*y=kgr#hm$ndy7!c_bz33$sk@!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
 
@@ -82,20 +82,33 @@ WSGI_APPLICATION = 'teachmint_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':'teach_mint_project__db',
+#         'USER':'teach_mint_project',
+#         'PASSWORD':'teach_mint_project',
+#         'HOST':'localhost',
+#         'PORT':'3306',
+#         'TEST': {
+#             'NAME': 'teach_mint_project__db',
+#         },
+#     }
+# }
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'teach_mint_project__db',
-        'USER':'teach_mint_project',
-        'PASSWORD':'teach_mint_project',
-        'HOST':'localhost',
+        'NAME': 'iayush01$default',
+        'USER': 'iayush01',
+        'PASSWORD': 'abcABC12',
+        'HOST': 'iayush01.mysql.pythonanywhere-services.com',
         'PORT':'3306',
-        'TEST': {
-            'NAME': 'teach_mint_project__db',
-        },
-    }
+    #     'TEST': {
+    #       'NAME': 'iayush01>$test_iayush01$default',
+    # },
+}
 }
 
 
